@@ -1,12 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
+    <title>Jacob`s mobile carwash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob's mobile carwash</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #f5f5f5;
+        }
+
+        header {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid orange;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+
+        nav {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #000, #222);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: orange;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #1f1f1f;
+            padding: 30px;
+            width: 280px;
+            border-radius: 10px;
+            border: 2px solid orange;
+        }
+
+        .card h3 {
+            color: orange;
+        }
+
+        .cta {
+            background: orange;
+            color: black;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid orange;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Jacob's Carwash</h1>
-    <p>Spremni da je vaš automobil sjajniji?</p>
+
+<header>
+    <img src="logo.png" alt="Logo Jacob`s mobile carwash">
+</header>
+
+<nav>
+    <a href="#about">O nama</a>
+    <a href="#services">Usluge</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<section class="hero">
+    <h1>Premium Mobile Detailing</h1>
+    <p>Dolazimo na vašu lokaciju. Profesionalne usluge pranja i poliranja.</p>
+    <a href="#contact" class="cta">Rezerviraj sada</a>
+</section>
+
+<section id="about" class="section">
+    <h2>O nama</h2>
+    <p>
+        Jacob`s mobile carwash je profesionalna tvrtka za detaljiranje automobila.
+        Dolazimo direktno na vašu adresu i pružamo premium vanjsko i unutarnje detaljiranje.
+        Bez čekanja. Bez muke. Samo čist, polirani automobil.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h2>Naše usluge</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Pranje automobila</h3>
+            <p>Vanjsko dubinsko čišćenje, pranje pjenom, sjaj guma i potpuno ručno pranje.</p>
+        </div>
+
+        <div class="card">
+            <h3>Poliranje</h3>
+            <p>Profesionalno strojno poliranje za vraćanje sjaja i uklanjanje lako vidljivih ogrebotina.</p>
+        </div>
+
+        <div class="card">
+            <h3>Potpuno detaljiranje</h3>
+            <p>Kompletan unutarnji i vanjski pregled za završni izgled kao iz showrooma.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Kontaktirajte nas</h2>
+    <p>Jacob`s Carwash</p>
+    <p>Email: your@email.com</p>
+    <p>Telefon: +385 XX XXX XXXX</p>
+</section>
+
+<footer>
+    <p>© 2026 Jacob`s mobile carwash. Sva prava zadržana.</p>
+</footer>
+
 </body>
 </html>
