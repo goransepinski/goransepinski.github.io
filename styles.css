@@ -1,0 +1,29 @@
+/* Osnovni stilovi za Jacob`s mobile carwash */
+:root{
+  --bg:#0f0f10;
+  --card:#1f1f21;
+  --accent:orange;
+  --text:#f5f5f5;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{max-height:60px}
+nav a{color:var(--accent);text-decoration:none;margin:0 10px;font-weight:600}
+nav a:hover{color:#fff}
+.hero{padding:80px 0;text-align:center;background:linear-gradient(90deg,#0b0b0b, #1a1a1a)}
+.hero h1{font-size:40px;color:var(--accent);margin:0 0 10px}
+.btn{display:inline-block;background:var(--accent);color:#000;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:700}
+.services{padding:40px 0}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:var(--card);padding:20px;border-radius:10px;border:2px solid var(--accent);flex:1;min-width:220px}
+.about{padding:30px 0}
+.cta{text-align:center;padding:30px 0}
+.footer-inner{padding:20px;text-align:center;border-top:3px solid var(--accent);margin-top:40px}
+.gallery{display:flex;gap:10px;flex-wrap:wrap}
+.gallery img{width:32%;border-radius:8px}
+.price-list{list-style:none;padding:0}
+.price-list li{background:var(--card);padding:12px;margin:8px 0;border-radius:8px;border-left:4px solid var(--accent)}
+
+@media(max-width:800px){.header-inner{flex-direction:column;gap:10px}.gallery img{width:100%}.cards{flex-direction:column}}
